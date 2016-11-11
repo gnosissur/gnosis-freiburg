@@ -1,0 +1,12 @@
+{
+    "presets": [
+        ["es2015", { "modules": false, "loose": true }],
+        "stage-2",
+        "react"
+    ],
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        ["csjs-postcss", { "plugins": ["postcss-cssnext", "csswring"] }]
+    ]
+}
