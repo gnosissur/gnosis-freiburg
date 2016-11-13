@@ -54,8 +54,6 @@ import { Motion, spring } from 'react-motion';
         & > div.content {
             & h4, & h5 { font-size: 1em; }
             & span {
-                font-size: 0.8em;
-                line-height: 1.3em;
                 display: block;
             }
             padding: 0 20px;

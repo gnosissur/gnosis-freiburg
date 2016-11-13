@@ -80,6 +80,12 @@ import { Section, Footer} from '../components';
         background-color: transparent;
         border: none;
     }
+}
+@media (max-device-width: 1224px) {
+    .main { font-size: 1em; }
+}
+@media (max-device-width: 1224px) and (orientation: portrait) {
+    .main { font-size: 1.5em; }
 }`
 export default class Page extends React.Component {
     static propTypes = { scrollSpy: React.PropTypes.bool };

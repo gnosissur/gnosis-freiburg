@@ -34,7 +34,7 @@ import csjs from 'react-csjs';
         padding-top: 4em;
         padding-bottom: 4em;
         & h3 {
-            font-size: 1.5em;
+            font-size: 2em;
         }
     }
 }`

@@ -1,5 +1,4 @@
 import React from 'react';
-import csjs from 'react-csjs';
 
 export default class StackedGrid extends React.Component {
     static propTypes = {
@@ -10,27 +9,26 @@ export default class StackedGrid extends React.Component {
     static defaultProps = {
         occupySpace: true,
         columns: 3,
-        margin: 10
+        margin: 0
     }
     render() {
         let { children, columns, margin, occupySpace } = this.props;
         let column = 0;
         let columnHeights = new Array(columns).fill(0);
-        let columnWidth = 100 / columns;
         let grid = React.Children.toArray(children).map(child => {
             let index = occupySpace
                 ? columnHeights.indexOf(Math.min(...columnHeights))
-                : index = column++
-            if (column === columns) column = 0;
-            let left = 100 * index / columns;
+                : index = column++ % columns;
+            let width = 100 / columns;
+            let left = 100 * index;
+            let offset = (index + 1) * margin;
             let top = columnHeights[index] + margin;
             columnHeights[index] += child.props.height + margin;
             return (
                 <div key={child.key} style={{
                     position: 'absolute',
-                    left: `calc(${left}% + ${margin / 2}px)`,
-                    top,
-                    width: `calc(${columnWidth}% - ${margin}px)`,
+                    transform: `translate3d(${margin ? `calc(${left}% + ${offset}px)` : `${left}%`},${top}px,0)`,
+                    width: `${margin ? `calc(${width}% - ${margin}px)` : `${width}%`}`,
                     height: child.props.height }}>
                     {child}
                 </div>
@@ -38,7 +36,7 @@ export default class StackedGrid extends React.Component {
         });
         let height = Math.max(...columnHeights);
         return (
-            <div style={{ padding: `0 ${margin / 2}px ${margin}px ${margin / 2}px`}}>
+            <div style={{ padding: `0 ${margin}px ${margin}px 0`}}>
                 <div style={{ position: 'relative', width: '100%', height }}>
                     {grid}
                 </div>

@@ -28,7 +28,6 @@ import StackedGrid from '../components/StackedGrid';
     .section { padding: 0 5%; }
 }`
 export default class Grid extends React.Component {
-    state = { width: document.body.clientWidth - document.body.clientWidth * media(0.1, 0.3)}
     render() {
         let { classes, children, title, data, control: Control, onItemClicked } = this.props;
         return (
