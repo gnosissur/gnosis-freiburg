@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Astral from './pages/Astral';
+import Main from './pages/Main';
 
-ReactDOM.render(<Astral />, document.getElementById('app'));
+ReactDOM.render(<Main />, document.getElementById('app'));

@@ -1,6 +1,6 @@
 import React from 'react';
 import csjs from 'react-csjs';
-import { CSSGrid, layout } from 'react-stonecutter';
+import StackedGrid from '../components/StackedGrid';
 
 @csjs`
 .section {
@@ -13,6 +13,7 @@ import { CSSGrid, layout } from 'react-stonecutter';
     background-color: #313131;
     color: white;
     & > div {
+        position: relative;
         background-color: #313131;
         top: -3em;
     }
@@ -22,48 +23,27 @@ import { CSSGrid, layout } from 'react-stonecutter';
         overflow: hidden;
         box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.4);
     }
+}
+@media (max-device-width: 1224px) {
+    .section { padding: 0 5%; }
 }`
 export default class Grid extends React.Component {
-    state = { width: document.body.clientWidth - document.body.clientWidth * 0.3}
-    componentDidMount() {
-        window.addEventListener('resize', event => {
-            let width = document.body.clientWidth;
-            this.setState({ width: width - width * 0.3 })
-        });
-    }
+    state = { width: document.body.clientWidth - document.body.clientWidth * media(0.1, 0.3)}
     render() {
-        let { classes, children, title, data, control, onItemClicked, active } = this.props;
-        let Control = control;
-        let gutter = 0;
-        let columns = 3;
-        let width = this.state.width / columns - gutter;
-
+        let { classes, children, title, data, control: Control, onItemClicked } = this.props;
         return (
             <section className={classes.section}>
-                <CSSGrid
-                    component="div"
-                    columns={columns}
-                    columnWidth={width}
-                    gutterWidth={gutter}
-                    gutterHeight={gutter}
-                    layout={layout.pinterest}
-                    duration={0}
-                    easing="none" >
-
-                    { data.map(item => (
-                        <div key={item.title} itemHeight={item.height} className={classes.item} style={{
-                            width: width,
-                            height: item.height,
-                            backgroundImage: `url(${item.image})`,
-                            backgroundPosition: item.position || 'center'
-                        }} onClick={() => onItemClicked(item)}>
-                            <Control item={item} active={active} />
-                        </div>
-                    )) }
-
-                </CSSGrid>
-
+                <StackedGrid
+                    occupySpace={true}
+                    margin={0}
+                    columns={media(2, 3)}>
+                    {data.map(item => <Control key={item.title} height={item.height} item={item} onItemClicked={onItemClicked}/>)}
+                </StackedGrid>
             </section>
         )
     }
+}
+
+function media(mobile, desktop) {
+    return window.matchMedia("(max-device-width: 1224px)").matches ? mobile : desktop;
 }

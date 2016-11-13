@@ -27,6 +27,16 @@ import csjs from 'react-csjs';
     }
     &:nth-of-type(even) { text-align: right; }
     &:nth-of-type(odd) { text-align: left; }
+}
+@media (max-device-width: 1224px) {
+    .section {
+        padding: 0 5%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        & h3 {
+            font-size: 1.5em;
+        }
+    }
 }`
 export default class Section extends React.Component {
     render() {

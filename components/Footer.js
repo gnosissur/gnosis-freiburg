@@ -39,6 +39,15 @@ import { Element } from 'react-scroll';
         color: black;
         text-decoration: none;
     }
+}
+@media (max-device-width: 1224px) {
+    .footer {
+        padding: 0 5%;
+        & h2, & h3 { line-height: 2.6rem; }
+        & h2, & h3, & h4 { font-size: 1.5em; }
+        & > div > div:first-of-type { padding-right: 1em; }
+        & > div > div:last-of-type { padding-left: 1em; }
+    }
 }`
 export default class Footer extends React.Component {
     render() {

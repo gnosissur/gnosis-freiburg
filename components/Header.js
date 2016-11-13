@@ -14,19 +14,19 @@ import { Link, Element } from 'react-scroll';
     text-align: center;
     padding: 0 10%;
     cursor: pointer;
-
     background-image: url(/assets/front.jpg);
     background-position: center center;
     background-size: 70vh;
     background-repeat: no-repeat;
-
     & h2 {
         margin-top: -400px;
         line-height: 4.5rem;
         font-weight: 600;
     }
-
     & span { font-style: italic; }
+}
+@media (max-device-width: 1224px) {
+    .header { background-size: 50vh; }
 }`
 export default class Header extends React.Component {
     render() {
