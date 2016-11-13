@@ -1,6 +1,6 @@
 import React from 'react';
 import csjs from 'react-csjs';
-import { Motion, spring } from 'react-motion';
+import { Motion, spring, presets } from 'react-motion';
 
 @csjs`
 .lightbox {
@@ -77,27 +77,25 @@ export default class Lightbox extends React.Component {
         let { classes, item, onClicked } = this.props;
         let { active } = this.state;
         return (
-            <Motion defaultStyle={{ opacity: 0 }} style={{ opacity: spring(active ? 1 : 0) }}>
-                {({ opacity }) => (
-                    <section
-                        className={classes.lightbox}
-                        onClick={this.toggle}
-                        style={{
-                            opacity,
-                            pointerEvents: opacity > 0.5 ? 'auto' : 'none',
-                            visibility: opacity > 0 ? 'visible' : 'hidden',
-                            cursor: opacity > 0.5 ? 'pointer' : 'inherit'
-                        }}>
+            <Motion defaultStyle={{ opacity: 0 }} style={{
+                opacity: spring(active ? 1 : 0) }}>
 
+                {({ opacity }) => (
+                    <section className={classes.lightbox} onClick={this.toggle} style={{
+                        opacity,
+                        pointerEvents: opacity > 0.5 ? 'auto' : 'none',
+                        visibility: opacity > 0 ? 'visible' : 'hidden',
+                        cursor: opacity > 0.5 ? 'pointer' : 'inherit' }}>
                         {item &&
-                            <Motion defaultStyle={{ scale: 0.95 }} style={{ scale: spring(active ? 1 : 0.95) }}>
-                                { ({ scale }) => (
+                            <Motion defaultStyle={{ scale: 0.95 }} style={{
+                                scale: spring(active ? 1 : 0.95, presets.gentle) }}>
+
+                                {({ scale }) => (
                                     <div className={classes.item} style={{ transform: `scale(${scale})`}}>
                                         <div className={classes.image} style={{
                                             backgroundImage: `url(${item.image})`,
                                             backgroundSize: 'cover',
-                                            backgroundPosition: item.position || 'center'
-                                        }} />
+                                            backgroundPosition: item.position || 'center' }} />
                                         <div className={classes.content}>
                                             <h4>{item.title}</h4>
                                             <h5>30. Nov 19:00</h5>
@@ -105,11 +103,12 @@ export default class Lightbox extends React.Component {
                                         </div>
                                     </div>
                                 )}
+
                             </Motion>
                         }
-
                     </section>
                 )}
+
             </Motion>
         )
     }
