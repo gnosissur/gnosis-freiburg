@@ -6,7 +6,6 @@ import csjs from 'react-csjs';
     cursor: pointer;
     background-size: cover;
     box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.4);
-
     width: 100%;
     height: 100%;
     & h5, & h6 { white-space: pre-wrap; word-break: break-word; }

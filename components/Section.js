@@ -33,9 +33,7 @@ import csjs from 'react-csjs';
         padding: 0 5%;
         padding-top: 4em;
         padding-bottom: 4em;
-        & h3 {
-            font-size: 2em;
-        }
+        & h3 { font-size: 2em; }
     }
 }`
 export default class Section extends React.Component {

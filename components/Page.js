@@ -21,7 +21,6 @@ import { Section, Footer} from '../components';
         url('/assets/fonts/Exchange.woff') format('woff'),
         url('/assets/fonts/Exchange.ttf') format('truetype');
 }
-
 .main {
     box-sizing: border-box;
     font-size: 100%;
@@ -32,11 +31,9 @@ import { Section, Footer} from '../components';
     font-style: normal;
     font-weight: normal;
     line-height: 1.6em;
-
     & *, & *:before, & *:after {
         box-sizing: inherit;
     }
-
     & h1, & h2, & h3, & h4, & h5, & h6 {
         white-space: pre;
         font-family: 'Gotham-Medium', sans-serifc;
@@ -49,7 +46,6 @@ import { Section, Footer} from '../components';
         margin: 0.3em;
         margin-bottom: 0.5em;
     }
-
     & h1 {
         font-size: 6em;
         &:before {
@@ -68,12 +64,10 @@ import { Section, Footer} from '../components';
     & h4 { font-size: 1.875em; }
     & h5 { font-size: 1.25em; }
     & h6 { font-size: 0.9375em; }
-
     & p::selection, & span::selection, & div::selection, & h1::selection, & h2::selection, & h3::selection, & h4::selection, & blockquote::selection, & pre::selection, & a::selection {
         background: #f7bb36;
         color: white;
     }
-
     & hr {
         height: 1px;
         color: transparent;

@@ -53,9 +53,7 @@ import { Motion, spring, presets } from 'react-motion';
         padding: 20px 0;
         & > div.content {
             & h4, & h5 { font-size: 1em; }
-            & span {
-                display: block;
-            }
+            & span { display: block; }
             padding: 0 20px;
         }
     }

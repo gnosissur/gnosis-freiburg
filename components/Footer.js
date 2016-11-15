@@ -35,10 +35,7 @@ import { Element } from 'react-scroll';
     }
     & > div > div > p { margin: 0; }
     & > div > div > p:first-of-type { margin-top: 1em; }
-    & a {
-        color: black;
-        text-decoration: none;
-    }
+    & a { color: black; text-decoration: none; }
 }
 @media (max-device-width: 1224px) {
     .footer {
@@ -55,6 +52,7 @@ export default class Footer extends React.Component {
         return (
             <Element name="Footer">
                 <footer className={classes.footer}>
+                    <div className={classes.gradient} />
                     <div>
                         <div>
                             <h2>{day}</h2>
