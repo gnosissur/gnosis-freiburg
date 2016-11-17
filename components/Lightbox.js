@@ -96,7 +96,7 @@ export default class Lightbox extends React.Component {
                                             backgroundPosition: item.position || 'center' }} />
                                         <div className={classes.content}>
                                             <h4>{item.title}</h4>
-                                            <h5>30. Nov 19:00</h5>
+                                            {item.day && <h5>{item.day}. {item.month} {item.time}</h5>}
                                             <span>{item.content}</span>
                                         </div>
                                     </div>

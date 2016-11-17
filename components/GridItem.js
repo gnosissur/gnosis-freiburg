@@ -46,14 +46,14 @@ import csjs from 'react-csjs';
 export default class GridItem extends React.Component {
     render() {
         let { classes, onItemClicked } = this.props;
-        let { title, height, image, position } = this.props.item;
+        let { day, month, time, title, height, image, position } = this.props.item;
         return (
             <div className={classes.wrapper} style={{
                 backgroundImage: `url(${image})`,
                 backgroundPosition: position || 'center' }} onClick={() => onItemClicked(this.props.item)}>
                 <div className={classes.gradient} />
                 <div className={classes.content}>
-                    <h5>5. <span style={{ fontSize: '0.8em'}}>NOV 19:00</span></h5>
+                    {day && <h5>{day}. <span style={{ fontSize: '0.8em'}}>{month} {time}</span></h5>}
                     <h6>{title}</h6>
                 </div>
             </div>
