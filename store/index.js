@@ -1,27 +1,27 @@
 export const data = [
-    { day: '30. Nov', time: '19:00', title: 'Was ist Gnosis', content: 'Einführung in das gnostische Weltbild. Die Strömungen und Traditionen. Gnosis in der Kunst, Philosophie, Wissenschaft und Religion. Drei Faktoren des Bewusstseins.', image: '/assets/kether.jpg', height: 600 },
+    { day: undefined, time: '', title: 'Was ist Gnosis', content: 'Einführung in das gnostische Weltbild. Von Meistern, Schülern, Strömungen und Traditionen. Gnosis in der Kunst, Philosophie, Wissenschaft und Religion. Kabbalah und Alchemie. Faktoren des Bewusstseins.', image: '/assets/kether.jpg', height: 600 },
 
-    { day: '7', month: 'Dez', time: '19:00', title: 'Persönlichkeit\nEssenz\n& Ego', content: 'Die esoterische Psychologie, der Aufbau unseres Ichs, innere Zustände, Missstände und Möglichkeiten. Praktische Übung: Der Observierende und das Observierte, die Teilung des Bewusstseins.', image: '/assets/bosch.jpg', height: 300 },
+    { day: undefined, month: '', time: '', title: 'Persönlichkeit\nEssenz\n& Ego', content: 'Die esoterische Psychologie, der Aufbau unseres Ichs, innere Zustände, Missstände und Möglichkeiten. Praktische Übung: Der Observierende und das Observierte, die Teilung des Bewusstseins.', image: '/assets/bosch.jpg', height: 300 },
 
-    { day: '12', month: 'Dez', time: '18:00', title: 'Erwachen des\nBewusstseins', content: 'Was ist das Bewusstsein, woher kommt es, welchen Anteil nimmt es an unserem Leben, wie stärkt man es. Praktische Übung: SOL, eine weitere Teilung des Bewusstseins.', image: '/assets/tongues.jpg', height: 300 },
+    { day: undefined, month: '', time: '18:00', title: 'Erwachen des\nBewusstseins', content: 'Was ist das Bewusstsein, woher kommt es, welchen Anteil nimmt es an unserem Leben, wie stärkt man es. Praktische Übung: SOL, eine weitere Teilung des Bewusstseins.', image: '/assets/tongues.jpg', height: 300 },
 
-    { day: '21', month: 'Dez', time: '19:00', title: 'Ego', content: 'Der Mensch ist zu seinem Nachsehen nicht eines. Er ist ist Bund verschiedenster Persönlichkeiten. Praktische Übung: Vertiefung der Übungen.', image: '/assets/pandora.jpg', height: 600 },
+    { day: undefined, month: '', time: '', title: 'Ego', content: 'Der Mensch ist zu seinem Nachsehen nicht eines. Er ist ist Bund verschiedenster Persönlichkeiten. Praktische Übung: Vertiefung der Übungen.', image: '/assets/pandora.jpg', height: 600 },
 
-    { day: '4', month: 'Jan', time: '19:00', title: 'Licht\nWärme\n& Ton', content: 'Das Gesetz der 3 (Schöpfung) und das Gesetz der 7 (Ordnung, Harmonie). Chakras und ihr Einfluss auf uns. Praktische Übung: Vokalisation, Mantrams.', image: '/assets/trinity.jpg', height: 600 },
+    { day: undefined, month: '', time: '', title: 'Licht\nWärme\n& Ton', content: 'Einführung in die Kabbalah. Das Gesetz der 3 (Schöpfung) und das Gesetz der 7 (Ordnung, Harmonie, Entwicklung). Chakras und ihr Einfluss auf uns. Praktische Übung: Vokalisation, Mantrams.', image: '/assets/trinity.jpg', height: 600 },
 
-    { day: '11', month: 'Jan', time: '19:00', title: 'Die Maschine Mensch', content: 'Die esoterische Physiologie. Unsere Fakultäten, Hirne und Mittler. Wie Funktioniert der Mensch aus der esoterischen Betrachtung. Praktische Übung: EInführung in die Selbstbeobachtung.', image: '/assets/sleepwalk.jpg', height: 600 },
+    { day: undefined, month: '', time: '', title: 'Die Maschine Mensch', content: 'Die esoterische Physiologie. Unsere Fakultäten, Nervensysteme und Mittler. Wie Funktioniert der Mensch aus der esoterischen Betrachtung. Praktische Übung: EInführung in die Selbstbeobachtung.', image: '/assets/sleepwalk.jpg', height: 600 },
 
-    { day: '18', month: 'Jan', time: '19:00', title: 'Welt der\nRelationen', content: 'Der Mensch und die Relationen die er unterhält zu Gott, zu sich selbst und seiner Umgebung. Praktische Übung: Retrospektion.', image: '/assets/relations.jpg', height: 300, position: 'top' },
+    { day: undefined, month: '', time: '', title: 'Welt der\nRelationen', content: 'Der Mensch und seine Rolle opder Funktion in der Welt, in der Gesellschaft mit Hinblick auf seinen göttlichen Aspekt. Praktische Übung: Retrospektion.', image: '/assets/relations.jpg', height: 300, position: 'top' },
 
-    { day: '25', month: 'Jan', time: '19:00', title: 'Weg und Leben\nNiveau des Wesens', content: 'Das Leben von Moment zu Moment und das Niveau des Bewusstseins. Praktische Übung: Wachsamkeit, Konzentration, falsche innere Zustände.', image: '/assets/ladder.jpg', height: 600, position: 'right bottom' },
+    { day: undefined, month: '', time: '', title: 'Weg und Leben\nNiveau des Wesens', content: 'Das Leben von Moment zu Moment und das Niveau des Bewusstseins. Praktische Übung: Wachsamkeit, Konzentration, falsche innere Zustände.', image: '/assets/ladder.jpg', height: 600, position: 'right bottom' },
 
-    { day: '1', month: 'Feb', time: '19:00', title: 'Dekalog\nGebote Gottes', content: 'Gottes Gebote und deren tiefere, esoterische Bedeutung. Praktische Übung: Praxis der 3 Faktoren.', image: '/assets/moses.jpg', height: 600, position: 'top' },
+    { day: undefined, month: '', time: '', title: 'Dekalog\nGebote Gottes', content: 'Religiöse Gebote und Werte und deren tiefere, esoterische Bedeutung. Praktische Übung: Praxis der 3 Faktoren.', image: '/assets/moses.jpg', height: 600, position: 'top' },
 
-    { day: '8', month: 'Feb', time: '19:00', title: 'Fundamentale\nErziehung', content: 'Unsere Berufung und die verschiedenen Stationen in unserem Leben. Praktische Übung: Runen.', image: '/assets/urania.jpg', height: 300 },
+    { day: undefined, month: '', time: '', title: 'Fundamentale\nErziehung', content: 'Einführung in die Astrologie. Unsere Berufung und die verschiedenen Phasen in unserem Leben. Praktische Übung: Runen.', image: '/assets/urania.jpg', height: 300 },
 
-    { day: '15', month: 'Feb', time: '19:00', title: 'Stammmbaum der\nReligionen', content: 'Zusammenhänge und Manifestationen der Weltreligionen. Praktische Übung: Vertiefung in das Thema Runen.', image: '/assets/hands.jpg', height: 300, position: 'left' },
+    { day: undefined, month: '', time: '', title: 'Stammmbaum der\nReligionen', content: 'Zusammenhänge und Manifestationen der Weltreligionen. Praktische Übung: Vertiefung in das Thema Runen.', image: '/assets/hands.jpg', height: 300, position: 'left' },
 
-    { day: '22', month: 'Feb', time: '19:00', title: 'Evolution\nInvolution\n& Revolution', content: 'Die Entwicklung der Menschheit. Essenzen und ihre Reise zur Menschwerdung. Das auf und ab des Rades Samsara', image: '/assets/dante.jpg', height: 600 },
+    { day: undefined, month: '', time: '', title: 'Evolution\nInvolution\n& Revolution', content: 'Die Entwicklung der Menschheit. Essenzen und ihre Reise. Das auf und ab des Rades Samsara', image: '/assets/dante.jpg', height: 600 },
 
     { day: undefined, month: '', time: '', title: 'Tod und Geburt', content: 'Die Geburt, die Einfuhr der Seele, das Verlassen des Körpes.', image: '/assets/death.jpg', height: 600, position: 'left' },
 

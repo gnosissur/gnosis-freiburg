@@ -26,7 +26,7 @@ export default class extends React.Component {
 
                 <Grid data={data} control={GridItem} onItemClicked={this.onItemClicked} />
 
-                <Footer day=".30" month="nov" title={"Start der\nSeminare im\nHaus am\nSchönberg,\nFreiburg"}>
+                <Footer title={"Gnostische \nSeminare"}>
                     <p>Kontakt: gnosissur@gmail.com</p>
                     <p>Eintritt kostenlos</p>
                 </Footer>

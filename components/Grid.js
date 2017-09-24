@@ -15,7 +15,6 @@ import StackedGrid from '../components/StackedGrid';
     & > div {
         position: relative;
         background-color: #313131;
-        top: -3em;
     }
     & .item {
         cursor: pointer;
